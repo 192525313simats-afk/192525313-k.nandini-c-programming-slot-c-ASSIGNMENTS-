@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int d1, c1, d2, c2;
+    scanf("%d %d %d %d", &d1, &c1, &d2, &c2);
+
+    int totalCents = c1 + c2;
+    int totalDollars = d1 + d2 + (totalCents / 100);
+    totalCents = totalCents % 100;
+
+    printf("%d\n%d\n", totalDollars, totalCents);
+    return 0;
+}

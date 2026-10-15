@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int coins, x, y;
+    scanf("%d %d %d", &coins, &x, &y);
+
+    int benShare = (coins * x) / 100;
+    coins -= benShare;
+
+    int blackShare = (coins * y) / 100;
+    coins -= blackShare;
+
+    int pirateShare = coins / 3;
+
+    printf("%d\n%d\n%d\n", blackShare, benShare, pirateShare);
+    return 0;
+}
